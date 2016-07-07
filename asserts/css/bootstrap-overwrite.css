@@ -1,0 +1,11 @@
+.dropdown-menu {
+    width: 250px !important;
+}
+
+.margin_left_5px{
+  margin-left: 5px;
+}
+
+.ui.card.blue_border {
+  border: 3px solid #0088cc;
+}

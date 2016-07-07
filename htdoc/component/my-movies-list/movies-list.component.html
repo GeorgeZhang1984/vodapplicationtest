@@ -1,0 +1,43 @@
+<div id="movies-list" class="row row-horizon">
+  <div class="col-xs-2" ng-repeat="movie in myMoviesListCtrl.moviesList">
+    <div class="ui card"
+      ng-class="{blue_border: movie.selected}"
+      ng-mousedown="myMoviesListCtrl.mouseNavigation($index)"
+    >
+      <a class="image" ng-click="myMoviesListCtrl.playMovie(movie)">
+        <img ng-src="{{:: movie.images[0].url}}">
+      </a>
+      <div class="content">
+        <a class="header" ng-click="myMoviesListCtrl.playMovie(movie)">
+          <p class="font-title" ng-bind="movie.title"></p>
+        </a>
+        <div class="meta">
+          <p ng-bind="movie.publishedUTCDate | date: longDate"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui basic modal">
+  <i class="close icon" ng-click="myMoviesListCtrl.stopPlayMovie()"></i>
+  <div class="header" ng-bind="myMoviesListCtrl.playingMovie.title"></div>
+  <div class="image content">
+    <video id="video_play_modal"
+      class="video-js vjs-default-skin"
+      controls
+      preload="auto"
+      width="900px"
+      height="300px"
+      data-setup='{"example_option":true}'
+    >
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a web browser that
+        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+      </p>
+    </video>
+  </div>
+  <div class="actions" style="text-align:center">
+    <p>Description: {{myMoviesListCtrl.playingMovie.description}}</p>
+  </div>
+</div>
