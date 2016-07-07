@@ -29,19 +29,19 @@ CREATE TABLE vodapp.history (
 1.	Describe the data you would capture as part of this service.
 
 2.	How would make this service more efficient?
-  > use database connect pool, return the cost of connecting db
-  > use CDN cash accelerate video playing speed
-  > get history from cookies, but still post data to server, in case user disabled cookies
-  > retrieve hot video and put them in memory speed access
-  > use new video format, less storage but better quality
+  - use database connect pool, return the cost of connecting db
+  - use CDN cash accelerate video playing speed
+  - get history from cookies, but still post data to server, in case user disabled cookies
+  - retrieve hot video and put them in memory speed access
+  - use new video format, less storage but better quality
 3.	Once the feature is complete, how would you know that it’s ready for go-live?
-  > the feature should be well-developed and test by developer
-  > the code has to pass all unit test (organised by Grunt or Gulp) on both font-end and back-end 
-  > the feature has to pass the functionality test, which means it actual match all requirements
-  > the code then has to pass CR by other teammates or other group
-  > if above all good, then it ready for go-live
+  - the feature should be well-developed and test by developer
+  - the code has to pass all unit test (organised by Grunt or Gulp) on both font-end and back-end 
+  - the feature has to pass the functionality test, which means it actual match all requirements
+  - the code then has to pass CR by other teammates or other group
+  - if above all good, then it ready for go-live
 4.	How would you determine if this feature is successful?
-  > if this feature be completed as time & under budget
-  > if the feature satisfied by all teammates
-  > if the feature satisfied by the client, I think this the most important factor
-  > if the feature affect (or break) others, shouldn't cause more bugs or hard to maintain
+  - if this feature be completed as time & under budget
+  - if the feature satisfied by all teammates
+  - if the feature satisfied by the client, I think this the most important factor
+  - if the feature affect (or break) others, shouldn't cause more bugs or hard to maintain
