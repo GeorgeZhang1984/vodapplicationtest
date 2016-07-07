@@ -6,7 +6,7 @@ Project (vodapplicationtest) for skill test:
 3. `node index.js`
 4. put `http://localhost:3000/` in browser address bar
 
-# Initialise MySQL (optional, for saving watch history)
+# Initialise MySQL (for saving watch history)
 1. make sure you have installed MySQL 5(+) in your computer
 2. login MySQL by command line or GUI tools, but use the user can create database, user and tables
 3. execute following SQL
@@ -27,7 +27,13 @@ CREATE TABLE vodapp.history (
 
 # Question
 1.	Describe the data you would capture as part of this service.
-
+  - the watching history including duration, movie type
+  - the response about service
+  - the response about video, like thumb up 
+  - the visit history including path, like randomly pick video from home or select specific page or using search
+  - share history
+  - comments
+  - total time on our service
 2.	How would make this service more efficient?
   - use database connect pool, return the cost of connecting db
   - use CDN cash accelerate video playing speed
