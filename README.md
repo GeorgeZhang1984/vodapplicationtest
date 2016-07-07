@@ -11,6 +11,7 @@ Project (vodapplicationtest) for skill test:
 2. login MySQL by command line or GUI tools, but use the user can create database, user and tables
 3. execute following SQL
 
+```
 CREATE DATABASE vodapp;
 CREATE USER 'vodapp'@'localhost' IDENTIFIED BY 'vodapp';
 GRANT ALL ON vodapp.* TO 'vodapp'@'localhost';
@@ -22,3 +23,4 @@ CREATE TABLE vodapp.history (
   `movie_title` VARCHAR(128) NOT NULL,
   `created` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+```
