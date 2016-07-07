@@ -4,7 +4,7 @@ Project (vodapplicationtest) for skill test:
 1. clone to your computer.
 2. `cd vodapplicationtest`
 3. `node index.js`
-4. put http://localhost:3000/ in browser address bar
+4. put `http://localhost:3000/` in browser address bar
 
 # Initialise MySQL
 1. make sure you have installed MySQL 5(+) in your computer
